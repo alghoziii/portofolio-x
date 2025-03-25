@@ -2,33 +2,19 @@ import React, { useEffect, useRef, useState } from "react";
 import Head from "next/head";
 import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
 import { BsFillMoonStarsFill, BsFillPatchCheckFill } from "react-icons/bs";
-import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from "swiper";
 import "swiper/swiper-bundle.css";
 import deved from "../public/ozi.png";
-import ME from "../public/me.jpg";
+import ME from "../public/gunung.jpg";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import exp from "../public/exp.png";
+import exp from "../public/work.jpg";
 
 SwiperCore.use([Navigation]);
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
-  const swiperRef = useRef(null);
-
-  const goNext = () => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slideNext();
-    }
-  };
-
-  const goPrev = () => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slidePrev();
-    }
-  };
 
   const portfolioData = [
     {
@@ -37,12 +23,14 @@ export default function Home() {
       desc: "Capstone Project in Bangkit 2023 Pembuatan Backend API aplikasi dan Mengkonfigurasikan Ke Google Cloud Platform",
       view: "https://github.com/keeptrain/Culinarix?tab=readme-ov-file",
       demo: "https://www.youtube.com/watch?feature=shared&v=_1JeLwmAOOE",
+      techStack: ["Python", "Flask", "Docker", "Firestore", "Google Cloud"]
     },
     {
       image: "/porto2.png",
       title: "Authbot",
       desc: "Authbot Proyek ini menerapkan algoritma generate teks ke foto berbasis website PHP untuk menciptakan konten visual yang unik.",
       view: "https://authbotzytes.000webhostapp.com/",
+      techStack: ["PHP", "JavaScript", "MySQL"]
     },
     {
       image: "/porto1.png",
@@ -50,11 +38,15 @@ export default function Home() {
       desc: "Mengembangkan sistem kasir berbasis Website PHP (Software as a Service) untuk memudahkan manajemen penjualan toko obat tanaman dan pupuk",
       view: "https://dashboard-kasir.vercel.app/",
       demo: "https://dashboard-kasir.vercel.app/",
+      techStack: ["PHP", "MYSQL", "React Js", "Tailwind", "PostgreSQL"]
+
     },
     {
       image: "/porto5.png",
       title: "Bookshelf",
       desc: "Pembuatan API Backend aplikasi catatan buku menggunakan Hapi framework.Implementasi CRUD (Create,Read,Update,Delete) ",
+      techStack: ["Python", "Google Cloud", "Docker", "FastAPI", "PostgreSQL"]
+
     },
   ];
 
@@ -74,32 +66,6 @@ export default function Home() {
       url: "https://grow.google/intl/id_id/bangkit/",
     },
   ];
-
-  // useEffect(() => {
-  //   const swiper = swiperRef.current?.swiper;
-  //   let intervalId;
-
-  //   const startInterval = () => {
-  //     intervalId = setInterval(() => {
-  //       if (swiper) {
-  //         swiper.slideNext();
-  //       }
-  //     }, 6000);
-  //   };
-
-  //   startInterval();
-
-  //   const reverseIntervalId = setInterval(() => {
-  //     if (swiper) {
-  //       swiper.slidePrev();
-  //     }
-  //   }, 9000);
-
-  //   return () => {
-  //     clearInterval(intervalId);
-  //     clearInterval(reverseIntervalId);
-  //   };
-  // }, []);
 
   useEffect(() => {
     AOS.init({
@@ -173,21 +139,26 @@ export default function Home() {
                   alt="Profile Photo"
                   layout="fill"
                   objectFit="cover"
-                  className="hover:scale-105 transition-transform duration-300"
+                  className="hover:scale-105 transition-transform duration-300 rounded-lg"
                 />
               </div>
             </div>
 
             {/* Content Container - Better aligned */}
-            <div className="w-full md:w-3/5 flex flex-col">
+            <div className="w-full md:w-3/5 max-w-xl flex flex-col">
               <div className="flex-grow">
-                <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
-                  I am a passionate web developer specializing in backend development. I have a passion for technology and am always looking to expand my knowledge and skills. I enjoy working in a team, delivering effective solutions, and contributing to innovative projects that make a positive impact. I am open to a variety of job opportunities that match my skills and interests.
+                <p className="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed text-lg max-w-prose px-6 text-justify ">
+                  I'm a passionate web developer specializing in backend development.
+                  I have a deep enthusiasm for technology and continuously seek opportunities to expand my knowledge and skills.
+                  I thrive in collaborative environments, delivering efficient solutions, and contributing to innovative projects that drive positive change.
+                  I am open to diverse job opportunities that align with my expertise and interests.
                 </p>
               </div>
 
+
+
               {/* Button aligned to right */}
-              <div className="flex justify-end mt-4">
+              {/* <div className="flex justify-end mt-4">
                 <a
                   href="https://www.linkedin.com/in/shobarudin-alghozi-550163217/"
                   target="_blank"
@@ -196,7 +167,7 @@ export default function Home() {
                 >
                   Know Me More
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -209,7 +180,7 @@ export default function Home() {
 
           <div className="flex flex-col md:flex-row items-stretch justify-center bg-gray-100 rounded-lg shadow-md dark:bg-gray-900 p-6 mx-auto max-w-6xl" data-aos="fade-down">
             {/* Image Container - Full Height */}
-            <div className="w-full md:w-1/3 mb-6 md:mb-0 md:mr-8 ">
+            <div className="mt-12">
               <div className="relative h-full w-full rounded-lg overflow-hidden">
                 <Image
                   src={exp}
@@ -329,61 +300,53 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="py-12" data-aos="zoom-in-left">
-          <div>
-            <h3 className="text-3xl py-1 text-teal-600 dark:text-teal-400 text-center mt-16">Portofolio</h3>
-          </div>
-          <Swiper ref={swiperRef} spaceBetween={30} slidesPerView={1}>
-            {portfolioData.map((item, index) => {
-              if (index % 2 === 0) {
-                return (
-                  <SwiperSlide key={index}>
-                    <div className="flex justify-between dark:bg-white mt-4 mb-5">
-                      {item && (
-                        <div className="flex-1 border border-gray-900 p-5 rounded-md mr-1">
-                          <img src={item.image} alt={item.title} className="w-full h-auto mb-4 mt-4 object-cover" style={{ maxHeight: "210px" }} />
-                          <h4 className="text-xl font-bold mt-11">{item.title}</h4>
-                          <p className="text-gray-600">{item.desc}</p>
-                          <div className="flex justify-center mt-12">
-                            <a href={item.demo} target="_blank" rel="noopener noreferrer" className="bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-600 mr-4">
-                              Demo
-                            </a>
-                            <a href={item.view} target="_blank" rel="noopener noreferrer" className="bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-600 mr-4">
-                              View
-                            </a>
-                          </div>
-                        </div>
-                      )}
-                      {index + 1 < portfolioData.length && (
-                        <div className="flex-1 border border-gray-900 p-6 rounded-md ml-4">
-                          <img src={portfolioData[index + 1].image} alt={portfolioData[index + 1].title} className="w-full h-auto mb-4 mt-4 object-cover" style={{ maxHeight: "210px" }} />
-                          <h4 className="text-xl font-bold mt-11">{portfolioData[index + 1].title}</h4>
-                          <p className="text-gray-600">{portfolioData[index + 1].desc}</p>
-                          <div className="flex justify-center mt-12">
-                            <a href={portfolioData[index + 1].demo} target="_blank" rel="noopener noreferrer" className="bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-600 mr-4">
-                              Demo
-                            </a>
-                            <a href={portfolioData[index + 1].view} target="_blank" rel="noopener noreferrer" className="bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-600 mr-4">
-                              View
-                            </a>
-                          </div>
-                        </div>
-                      )}
+
+        <section className="py-12 bg-gray-100 dark:bg-gray-900">
+          <div className="container mx-auto px-4">
+            <h3 className="text-3xl py-1 text-teal-600 dark:text-teal-400 text-center mb-12">Portfolio</h3>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {portfolioData.map((item, index) => (
+                <div
+                  key={index}
+                  className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                  data-aos="fade-up"
+                >
+                  <div className="relative h-60 w-full overflow-hidden">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h4 className="text-xl font-bold text-gray-800 dark:text-white mb-3">{item.title}</h4>
+                    <p className="text-gray-600 dark:text-gray-300 mb-6">{item.desc}</p>
+
+                    {/* Unique Tech Stack for Each Project */}
+                    <div className="flex flex-wrap gap-2 mb-6">
+                      {item.techStack?.map((tech, i) => (
+                        <span
+                          key={i}
+                          className="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-3 py-1 rounded-full text-xs"
+                        >
+                          {tech}
+                        </span>
+                      ))}
                     </div>
-                  </SwiperSlide>
-                );
-              } else {
-                return null;
-              }
-            })}
-          </Swiper>
-          <div className="flex justify-end mt-4">
-            <button onClick={goPrev} className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l">
-              Prev
-            </button>
-            <button onClick={goNext} className="bg-blue-700 hover:bg-gray-400 text-gray-200 font-bold py-2 px-4 rounded-r">
-              Next
-            </button>
+
+                    <a
+                      href={item.view || item.demo || '#'}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block w-full bg-teal-500 hover:bg-teal-600 text-white text-center py-2 px-4 rounded-lg transition-colors duration-300"
+                    >
+                      Lihat Detail
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
       </main>
