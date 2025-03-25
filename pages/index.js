@@ -10,11 +10,12 @@ import ME from "../public/me.jpg";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import exp from "../public/exp.png";
 
 SwiperCore.use([Navigation]);
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const swiperRef = useRef(null);
 
   const goNext = () => {
@@ -54,6 +55,23 @@ export default function Home() {
       image: "/porto5.png",
       title: "Bookshelf",
       desc: "Pembuatan API Backend aplikasi catatan buku menggunakan Hapi framework.Implementasi CRUD (Create,Read,Update,Delete) ",
+    },
+  ];
+
+  const experiences = [
+    {
+      period: "Agt 2024 - Jan 2025",
+      title: "FULL STACK DEVELOPER",
+      company: "Horus Technology(internship)",
+      location: "Gamping,Yogyakarta",
+      url: "https://www.horus.co.id/",
+    },
+    {
+      period: "Agt 2024 - Jan 2024",
+      title: "Cloud Computing",
+      company: "Bangkit (Studi Independent)",
+      location: "Bandung, Indonesia (Remote)",
+      url: "https://grow.google/intl/id_id/bangkit/",
     },
   ];
 
@@ -125,7 +143,7 @@ export default function Home() {
           </div>
           <div className="text-center p-5 py-1" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <h2 className="text-2xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl ">Shobarudin</h2>
-            <h3 className="text-ls py-3 dark:text-white md:text-3md">Frontend Web Developer | Backend Web Developer</h3>
+            <h3 className="text-ls py-3 dark:text-white md:text-3md">Backend Web Developer</h3>
           </div>
           <div className="flex justify-center gap-10 py-3 text-gray-600 dark:text-gray-400" data-aos="fade-up">
             <a href="https://github.com/alghoziii" target="_blank" rel="noopener noreferrer" className="text-4xl hover:text-gray-800 transition-colors duration-300">
@@ -138,30 +156,95 @@ export default function Home() {
               <AiFillInstagram />
             </a>
           </div>
-        </section>
-        <h3 className="text-3xl py-1 text-teal-600 dark:text-teal-400 mt-16 text-center" data-aos="fade-down">
-          About Me
-        </h3>
-        <section id="about-me" className="flex flex-col md:flex-row items-center justify-center py-12 bg-gray-100 rounded-lg shadow-md max-w-full h-auto dark:bg-gray-900 mt-3" data-aos="fade-up-left">
-          <div className="w-full md:w-1/2 lg:w-1/3 mx-4">
-            <Image src={ME} alt="me" className="rounded-lg shadow-md max-w-full h-auto" />
-          </div>
 
-          <div className="w-full md:w-2/3 mx-2 mt-4 md:mt-0">
-            <div className="text-center p-6">
-              <p className="text-md leading-1 text-gray-700 dark:text-white">
-                I am currently a 6th semester student at Amikom University Yogyakarta, Information Systems Study Program. I have a great interest in the field of technology. I have experience in the fields of Frontend Development, Backend
-                Development, and Cloud Computing. I am a person who enjoys learning new things, especially about technology.
-              </p>
-              <a href="https://www.linkedin.com/in/shobarudin-alghozi-550163217/">
-                <button className="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-6 rounded-xl mt-4 md:mt-5">Know Me More</button>
-              </a>
+        </section>
+
+        <section id="about" className="py-12">
+          <h3 className="text-3xl py-1 text-teal-600 dark:text-teal-400 text-center mb-8" data-aos="fade-down">
+            About Me
+          </h3>
+
+          <div className="flex flex-col md:flex-row items-center bg-gray-100 dark:bg-gray-900 rounded-xl shadow-lg p-6 mx-auto max-w-5xl" data-aos="fade-up">
+            {/* Image Container - Closer to text */}
+            <div className="w-full md:w-2/5 mb-6 md:mb-0 md:mr-8">
+              <div className="relative aspect-square w-full rounded-xl overflow-hidden shadow-md">
+                <Image
+                  src={ME}
+                  alt="Profile Photo"
+                  layout="fill"
+                  objectFit="cover"
+                  className="hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+
+            {/* Content Container - Better aligned */}
+            <div className="w-full md:w-3/5 flex flex-col">
+              <div className="flex-grow">
+                <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+                  I am a passionate web developer specializing in backend development. I have a passion for technology and am always looking to expand my knowledge and skills. I enjoy working in a team, delivering effective solutions, and contributing to innovative projects that make a positive impact. I am open to a variety of job opportunities that match my skills and interests.
+                </p>
+              </div>
+
+              {/* Button aligned to right */}
+              <div className="flex justify-end mt-4">
+                <a
+                  href="https://www.linkedin.com/in/shobarudin-alghozi-550163217/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-teal-500 hover:bg-teal-600 text-white font-medium py-2 px-6 rounded-lg transition-colors duration-300"
+                >
+                  Know Me More
+                </a>
+              </div>
             </div>
           </div>
         </section>
+
+
+        <section id="experience" className="py-12">
+          <h3 className="text-3xl py-1 text-teal-600 dark:text-teal-400 text-center mb-8" data-aos="fade-down">
+            My Experience
+          </h3>
+
+          <div className="flex flex-col md:flex-row items-stretch justify-center bg-gray-100 rounded-lg shadow-md dark:bg-gray-900 p-6 mx-auto max-w-6xl" data-aos="fade-down">
+            {/* Image Container - Full Height */}
+            <div className="w-full md:w-1/3 mb-6 md:mb-0 md:mr-8 ">
+              <div className="relative h-full w-full rounded-lg overflow-hidden">
+                <Image
+                  src={exp}
+                  alt="Work Experience"
+                />
+              </div>
+            </div>
+
+            {/* Experiences List - Better Card Sizing */}
+            <div className="w-full md:w-2/3 space-y-6">
+              {experiences.map((exp, index) => (
+                <a
+                  key={index}
+                  href={exp.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block p-5 bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-md transition-all duration-300 ml-auto hover:-translate-y-1 hover:border-l-4 hover:border-teal-500"
+                  style={{ maxWidth: "90%" }}
+                >
+                  <div className="text-gray-700 dark:text-green-400 font-medium">{exp.period}</div>
+                  <h4 className="text-xl font-bold text-gray-800 dark:text-white mb-1">{exp.title}</h4>
+                  <div className="text-gray-700 dark:text-gray-300 font-medium">{exp.company}</div>
+                  <div className="text-gray-600 dark:text-gray-400 text-sm">{exp.location}</div>
+                  <div className="mt-2 text-teal-500 text-sm flex items-center">
+                    View details <span className="ml-1">→</span>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section id="experience">
           <h3 className="text-3xl py-1 text-teal-600 dark:text-teal-400 mt-16 text-center mb-11" data-aos="zoom-in">
-            My Experience
+            My Skills
           </h3>
           <div className="container experience__container dark:text-white" data-aos="zoom-in">
             <div className="experience__fontend">
