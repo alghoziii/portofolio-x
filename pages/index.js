@@ -20,32 +20,42 @@ export default function Home() {
     {
       image: "/porto3.png",
       title: "Culinarix",
-      desc: "Capstone Project in Bangkit 2023 Pembuatan Backend API aplikasi dan Mengkonfigurasikan Ke Google Cloud Platform",
+      desc: "Culinarix  merupakan aplikasi rekomendasi kuliner di kota bandung untuk membantu wisatawan ataupun masyarat lokal disana menemukan rekomendasi kuliner yang sesuai dengan preferensi mereka.",
       view: "https://github.com/keeptrain/Culinarix?tab=readme-ov-file",
       demo: "https://www.youtube.com/watch?feature=shared&v=_1JeLwmAOOE",
-      techStack: ["Python", "Flask", "Docker", "Firestore", "Google Cloud"]
+      techStack: ["Python", "Flask", "Docker", "Firestore", "GCP "]
     },
     {
-      image: "/porto2.png",
-      title: "Authbot",
-      desc: "Authbot Proyek ini menerapkan algoritma generate teks ke foto berbasis website PHP untuk menciptakan konten visual yang unik.",
-      view: "https://authbotzytes.000webhostapp.com/",
-      techStack: ["PHP", "JavaScript", "MySQL"]
+      image: "/uikit.png",
+      title: "UIKIT Website",
+      desc: "Website ini merupakan Website Jual Beli UI KIT Figma dengan sistem subscription dengan midtrans.Website ini dibangun menggunakan VueJs 3 dan backend nya menggunakan laravel .                              ",
+      view: "https://github.com/alghoziii/FE-UI-KIT",
+      techStack: ["VueJs", "JavaScript", "MySQL", "Tailwind", "Laravel"]
     },
     {
       image: "/porto1.png",
       title: "KASIRQ",
-      desc: "Mengembangkan sistem kasir berbasis Website PHP (Software as a Service) untuk memudahkan manajemen penjualan toko obat tanaman dan pupuk",
+      desc: "Mengembangkan sistem kasir berbasis Website (Software as a Service) untuk memudahkan manajemen penjualan toko obat tanaman dan pupuk. Website ini dilengkapi sistem subscription sesuai paket yang dipilih .",
       view: "https://dashboard-kasir.vercel.app/",
       demo: "https://dashboard-kasir.vercel.app/",
       techStack: ["PHP", "MYSQL", "React Js", "Tailwind", "PostgreSQL"]
 
     },
+
     {
-      image: "/porto5.png",
-      title: "Bookshelf",
-      desc: "Pembuatan API Backend aplikasi catatan buku menggunakan Hapi framework.Implementasi CRUD (Create,Read,Update,Delete) ",
-      techStack: ["Python", "Google Cloud", "Docker", "FastAPI", "PostgreSQL"]
+      image: "/travela.png",
+      title: "Travela",
+      desc: "Travela Merupakan website booking paket travel secara online yang dibangun menggunakan PHP Laravel 11. Website ini dilengkapi fitur autentikasi pengguna, role-based access control (menggunakan Spatie), content management system untuk admin, checkout dan approval sistem, serta katalog paket tour. ",
+      view: "https://github.com/alghoziii/Travela",
+      techStack: ["Laravel", " Mysql", "Tailwind", "PHP",]
+
+    },
+    {
+      image: "/booking.png",
+      title: "Mini Soccer Booking",
+      desc: "Website pemesanan lapangan mini soccer online yang dibangun dengan arsitektur microservices menggunakan Golang, dilengkapi fitur autentikasi pengguna, cek ketersediaan jadwal lapangan secara real-time,pembayaran online(Midtrans)",
+      view: "https://github.com/alghoziii/mini-soccer-booking",
+      techStack: ["Golang", " PostgreSql", "Jenkins", "Docker", "GCP", "NEXTJS"]
 
     },
   ];
@@ -97,7 +107,7 @@ export default function Home() {
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl" />
               </li>
               <li>
-                <a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8" href="https://drive.google.com/file/d/1alVTlNg8F-0jYpyuPtKkh1FRKz5G_QMf/view?usp=drive_link">
+                <a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8" href="https://drive.google.com/file/d/1T4Y2qRci9l4_oDT8FgZ12C4dlzpoRgwE/view?usp=sharing">
                   Resume
                 </a>
               </li>
@@ -108,7 +118,7 @@ export default function Home() {
             <Image src={deved} layout="fill" objectFit="cover" />
           </div>
           <div className="text-center p-5 py-1" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <h2 className="text-2xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl ">Shobarudin</h2>
+            <h2 className="text-2xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-4xl ">Shobarudin Alghozi</h2>
             <h3 className="text-ls py-3 dark:text-white md:text-3md">Backend Web Developer</h3>
           </div>
           <div className="flex justify-center gap-10 py-3 text-gray-600 dark:text-gray-400" data-aos="fade-up">
@@ -221,20 +231,7 @@ export default function Home() {
             <div className="experience__fontend">
               <h3>Frontend Development</h3>
               <div className="experience__content mt-6">
-                <article className="experience__details">
-                  <BsFillPatchCheckFill className="experience__details-icon" />
-                  <div>
-                    <h4>HTML</h4>
-                    <small className="text-light">Experienced</small>
-                  </div>
-                </article>
-                <article className="experience__details">
-                  <BsFillPatchCheckFill className="experience__details-icon" />
-                  <div>
-                    <h4>CSS</h4>
-                    <small className="text-light">Experienced</small>
-                  </div>
-                </article>
+
                 <article className="experience__details">
                   <BsFillPatchCheckFill className="experience__details-icon" />
                   <div>
@@ -245,21 +242,21 @@ export default function Home() {
                 <article className="experience__details">
                   <BsFillPatchCheckFill className="experience__details-icon" />
                   <div>
-                    <h4>Bootstrap</h4>
-                    <small className="text-light">Experienced</small>
-                  </div>
-                </article>
-                <article className="experience__details">
-                  <BsFillPatchCheckFill className="experience__details-icon" />
-                  <div>
-                    <h4>Tailwind</h4>
+                    <h4>PHP</h4>
                     <small className="text-light">Intermediate</small>
                   </div>
                 </article>
                 <article className="experience__details">
                   <BsFillPatchCheckFill className="experience__details-icon" />
                   <div>
-                    <h4>React</h4>
+                    <h4>Vue Js</h4>
+                    <small className="text-light">Intermediate</small>
+                  </div>
+                </article>
+                <article className="experience__details">
+                  <BsFillPatchCheckFill className="experience__details-icon" />
+                  <div>
+                    <h4>Laravel</h4>
                     <small className="text-light">Intermediate</small>
                   </div>
                 </article>
@@ -271,20 +268,6 @@ export default function Home() {
                 <article className="experience__details">
                   <BsFillPatchCheckFill className="experience__details-icon" />
                   <div>
-                    <h4>Node JS</h4>
-                    <small className="text-light">Intermediate</small>
-                  </div>
-                </article>
-                <article className="experience__details">
-                  <BsFillPatchCheckFill className="experience__details-icon" />
-                  <div>
-                    <h4>MySQL</h4>
-                    <small className="text-light">Intermediate</small>
-                  </div>
-                </article>
-                <article className="experience__details">
-                  <BsFillPatchCheckFill className="experience__details-icon" />
-                  <div>
                     <h4>Python</h4>
                     <small className="text-light">Intermediate</small>
                   </div>
@@ -292,8 +275,36 @@ export default function Home() {
                 <article className="experience__details">
                   <BsFillPatchCheckFill className="experience__details-icon" />
                   <div>
-                    <h4>Cloud Computing</h4>
+                    <h4>Node JS</h4>
                     <small className="text-light">Intermediate</small>
+                  </div>
+                </article>
+                <article className="experience__details">
+                  <BsFillPatchCheckFill className="experience__details-icon" />
+                  <div>
+                    <h4>Flask</h4>
+                    <small className="text-light">Intermediate</small>
+                  </div>
+                </article>
+                <article className="experience__details">
+                  <BsFillPatchCheckFill className="experience__details-icon" />
+                  <div>
+                    <h4>Golang</h4>
+                    <small className="text-light">Pre-intermediate </small>
+                  </div>
+                </article>
+                <article className="experience__details">
+                  <BsFillPatchCheckFill className="experience__details-icon" />
+                  <div>
+                    <h4>Google Cloud Computing</h4>
+                    <small className="text-light">Intermediate </small>
+                  </div>
+                </article>
+                <article className="experience__details">
+                  <BsFillPatchCheckFill className="experience__details-icon" />
+                  <div>
+                    <h4>Mysql & PostgreSql</h4>
+                    <small className="text-light">Intermediate </small>
                   </div>
                 </article>
               </div>
@@ -321,14 +332,14 @@ export default function Home() {
                   </div>
                   <div className="p-6">
                     <h4 className="text-xl font-bold text-gray-800 dark:text-white mb-3">{item.title}</h4>
-                    <p className="text-gray-600 dark:text-gray-300 mb-6">{item.desc}</p>
+                    <p className="text-gray-600 dark:text-gray-300 mb-6 text-justify">{item.desc}</p>
 
                     {/* Unique Tech Stack for Each Project */}
-                    <div className="flex flex-wrap gap-2 mb-6">
+                    <div className="flex flex-wrap gap-4 mb-6">
                       {item.techStack?.map((tech, i) => (
                         <span
                           key={i}
-                          className="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-3 py-1 rounded-full text-xs"
+                          className="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-3 py-1 rounded-full text-sm"
                         >
                           {tech}
                         </span>
