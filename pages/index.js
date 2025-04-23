@@ -38,7 +38,7 @@ export default function Home() {
       desc: "Mengembangkan sistem kasir berbasis Website (Software as a Service) untuk memudahkan manajemen penjualan toko obat tanaman dan pupuk. Website ini dilengkapi sistem subscription sesuai paket yang dipilih .",
       view: "https://dashboard-kasir.vercel.app/",
       demo: "https://dashboard-kasir.vercel.app/",
-      techStack: ["PHP", "MYSQL", "React Js", "Tailwind", "PostgreSQL"]
+      techStack: ["PHP", "MYSQL", "React Js", "Tailwind"]
 
     },
 
