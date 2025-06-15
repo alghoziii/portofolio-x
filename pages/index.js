@@ -18,6 +18,14 @@ export default function Home() {
 
   const portfolioData = [
     {
+      image: "/catatan.png",
+      title: "MyCatatan",
+      desc: "Aplikasi pencatatan sederhana berbasis React yang memungkinkan pengguna membuat, mengarsipkan, dan mencari catatan. Data disimpan secara lokal melalui localStorage.",
+      view: "https://catatan-react-chi.vercel.app/",
+      demo: "",
+      techStack: ["React", "JavaScript", "LocalStorage", "CSS"]
+    },
+    {
       image: "/porto3.png",
       title: "Culinarix",
       desc: "Culinarix  merupakan aplikasi rekomendasi kuliner di kota bandung untuk membantu wisatawan ataupun masyarat lokal disana menemukan rekomendasi kuliner yang sesuai dengan preferensi mereka.",
