@@ -23,7 +23,7 @@ export default function Home() {
       desc: "Aplikasi pencatatan sederhana berbasis React yang memungkinkan pengguna membuat, mengarsipkan, dan mencari catatan. Data disimpan secara lokal melalui localStorage.",
       view: "https://catatan-react-chi.vercel.app/",
       demo: "",
-      techStack: ["React", "JavaScript", "LocalStorage", "CSS"]
+      techStack: ["React Js", "LocalStorage", "CSS"]
     },
     {
       image: "/porto3.png",
@@ -31,14 +31,14 @@ export default function Home() {
       desc: "Culinarix  merupakan aplikasi rekomendasi kuliner di kota bandung untuk membantu wisatawan ataupun masyarat lokal disana menemukan rekomendasi kuliner yang sesuai dengan preferensi mereka.",
       view: "https://github.com/keeptrain/Culinarix?tab=readme-ov-file",
       demo: "https://www.youtube.com/watch?feature=shared&v=_1JeLwmAOOE",
-      techStack: ["Python", "Flask", "Docker", "Firestore", "GCP "]
+      techStack: ["Flask", "Docker", "Firestore", "GCP "]
     },
     {
       image: "/uikit.png",
       title: "UIKIT Website",
       desc: "Website ini merupakan Website Jual Beli UI KIT Figma dengan sistem subscription dengan midtrans.Website ini dibangun menggunakan VueJs 3 dan backend nya menggunakan laravel .                              ",
       view: "https://github.com/alghoziii/FE-UI-KIT",
-      techStack: ["VueJs", "JavaScript", "MySQL", "Tailwind", "Laravel"]
+      techStack: ["VueJs", "MySQL", "Tailwind", "Laravel"]
     },
     {
       image: "/porto1.png",
@@ -46,7 +46,7 @@ export default function Home() {
       desc: "Mengembangkan sistem kasir berbasis Website (Software as a Service) untuk memudahkan manajemen penjualan toko obat tanaman dan pupuk. Website ini dilengkapi sistem subscription sesuai paket yang dipilih .",
       view: "https://dashboard-kasir.vercel.app/",
       demo: "https://dashboard-kasir.vercel.app/",
-      techStack: ["PHP", "MYSQL", "React Js", "Tailwind"]
+      techStack: ["PHP Native", "MYSQL", "Tailwind"]
 
     },
 
@@ -55,7 +55,7 @@ export default function Home() {
       title: "Travela",
       desc: "Travela Merupakan website booking paket travel secara online yang dibangun menggunakan PHP Laravel 11. Website ini dilengkapi fitur autentikasi pengguna, role-based access control (menggunakan Spatie), content management system untuk admin, checkout dan approval sistem, serta katalog paket tour. ",
       view: "https://github.com/alghoziii/Travela",
-      techStack: ["Laravel", " Mysql", "Tailwind", "PHP",]
+      techStack: ["Laravel", " Mysql", "Tailwind",]
 
     },
     {
@@ -63,7 +63,7 @@ export default function Home() {
       title: "Mini Soccer Booking",
       desc: "Website pemesanan lapangan mini soccer online yang dibangun dengan arsitektur microservices menggunakan Gin & Golang, dilengkapi fitur autentikasi pengguna, cek ketersediaan jadwal lapangan secara real-time,order lapangan dan pembayaran online(Midtrans)",
       view: "https://github.com/alghoziii/mini-soccer-booking",
-      techStack: ["Golang", " PostgreSql", "Jenkins", "Docker", "GCP", "NEXTJS"]
+      techStack: ["Golang", " PostgreSql", "Docker", "GCP", "NEXTJS"]
 
     },
   ];
