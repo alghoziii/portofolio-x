@@ -264,14 +264,14 @@ export default function Home() {
                 <article className="experience__details">
                   <BsFillPatchCheckFill className="experience__details-icon" />
                   <div>
-                    <h4>Vue Js</h4>
+                    <h4>Laravel</h4>
                     <small className="text-light">Intermediate</small>
                   </div>
                 </article>
                 <article className="experience__details">
                   <BsFillPatchCheckFill className="experience__details-icon" />
                   <div>
-                    <h4>Laravel</h4>
+                    <h4>React Js</h4>
                     <small className="text-light">Intermediate</small>
                   </div>
                 </article>
