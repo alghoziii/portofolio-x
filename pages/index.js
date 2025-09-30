@@ -23,7 +23,7 @@ export default function Home() {
       desc: "Aplikasi pencatatan sederhana berbasis React yang memungkinkan pengguna membuat, mengarsipkan, dan mencari catatan. Data disimpan secara lokal melalui localStorage.",
       view: "https://catatan-react-chi.vercel.app/",
       demo: "",
-      techStack: ["React Js", "LocalStorage", "CSS"]
+      techStack: ["ReactJs", "LocalStorage", "CSS"]
     },
     {
       image: "/porto3.png",
@@ -31,7 +31,7 @@ export default function Home() {
       desc: "Culinarix  merupakan aplikasi rekomendasi kuliner di kota bandung untuk membantu wisatawan ataupun masyarat lokal disana menemukan rekomendasi kuliner yang sesuai dengan preferensi mereka.",
       view: "https://github.com/keeptrain/Culinarix?tab=readme-ov-file",
       demo: "https://www.youtube.com/watch?feature=shared&v=_1JeLwmAOOE",
-      techStack: ["Flask", "Docker", "Firestore", "GCP "]
+      techStack: ["NodeJs", "Docker", "Firestore", "GCP "]
     },
     {
       image: "/uikit.png",
@@ -46,7 +46,7 @@ export default function Home() {
       desc: "Mengembangkan sistem kasir berbasis Website (Software as a Service) untuk memudahkan manajemen penjualan toko obat tanaman dan pupuk. Website ini dilengkapi sistem subscription sesuai paket yang dipilih .",
       view: "https://dashboard-kasir.vercel.app/",
       demo: "https://dashboard-kasir.vercel.app/",
-      techStack: ["PHP Native", "MYSQL", "Tailwind"]
+      techStack: ["PHP Native","ReactJs", "MYSQL", "Tailwind"]
 
     },
 
