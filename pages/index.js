@@ -31,7 +31,7 @@ export default function Home() {
       desc: "Culinarix  merupakan aplikasi rekomendasi kuliner di kota bandung untuk membantu wisatawan ataupun masyarat lokal disana menemukan rekomendasi kuliner yang sesuai dengan preferensi mereka.",
       view: "https://github.com/keeptrain/Culinarix?tab=readme-ov-file",
       demo: "https://www.youtube.com/watch?feature=shared&v=_1JeLwmAOOE",
-      techStack: ["NodeJs", "Docker", "Firestore", "GCP "]
+      techStack: ["Flask", "Docker", "Firestore", "GCP "]
     },
     {
       image: "/uikit.png",
