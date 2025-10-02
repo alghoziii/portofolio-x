@@ -34,11 +34,19 @@ export default function Home() {
       techStack: ["Flask", "Docker", "Firestore", "GCP "]
     },
     {
-      image: "/uikit.png",
-      title: "UIKIT Website",
-      desc: "Website ini merupakan Website Jual Beli UI KIT Figma dengan sistem subscription dengan midtrans.Website ini dibangun menggunakan VueJs 3 dan backend nya menggunakan laravel .                              ",
-      view: "https://github.com/alghoziii/FE-UI-KIT",
-      techStack: ["VueJs", "MySQL", "Tailwind", "Laravel"]
+      image: "/travela.png",
+      title: "Travela",
+      desc: "Travela Merupakan website booking paket travel secara online yang dibangun menggunakan PHP Laravel 11. Website ini dilengkapi fitur autentikasi pengguna, role-based access control (menggunakan Spatie), content management system untuk admin, checkout dan approval sistem, serta katalog paket tour. ",
+      view: "https://github.com/alghoziii/Travela",
+      techStack: ["Laravel", " Mysql", "Tailwind","Spatie","Breeze"]
+
+    },
+    {
+      image: "/man4.png",
+      title: "MAN 4 Bantul Yogyakarta ",
+      desc: "Website ini adalah portal informasi dari Madrasah Aliyah Negeri (MAN) 4 Bantul, yang berlokasi di Yogyakarta. Adapun fitur dalam website terdiri dari Profile,Berita, Galeri,dan Layanan .                              ",
+      view: "https://github.com/alghoziii/MAN-4-Bantul",
+      techStack: ["VueJs", "Tailwind"]
     },
     {
       image: "/porto1.png",
@@ -47,15 +55,6 @@ export default function Home() {
       view: "https://dashboard-kasir.vercel.app/",
       demo: "https://dashboard-kasir.vercel.app/",
       techStack: ["PHP Native","ReactJs", "MYSQL", "Tailwind"]
-
-    },
-
-    {
-      image: "/travela.png",
-      title: "Travela",
-      desc: "Travela Merupakan website booking paket travel secara online yang dibangun menggunakan PHP Laravel 11. Website ini dilengkapi fitur autentikasi pengguna, role-based access control (menggunakan Spatie), content management system untuk admin, checkout dan approval sistem, serta katalog paket tour. ",
-      view: "https://github.com/alghoziii/Travela",
-      techStack: ["Laravel", " Mysql", "Tailwind",]
 
     },
     {
