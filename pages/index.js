@@ -38,7 +38,7 @@ export default function Home() {
       title: "Travela",
       desc: "Travela Merupakan website booking paket travel secara online yang dibangun menggunakan PHP Laravel 11. Website ini dilengkapi fitur autentikasi pengguna, role-based access control (menggunakan Spatie), content management system untuk admin, checkout dan approval sistem, serta katalog paket tour. ",
       view: "https://github.com/alghoziii/Travela",
-      techStack: ["Laravel", " Mysql", "Tailwind","Spatie","Breeze"]
+      techStack: ["Laravel", " Mysql", "Tailwind","Breeze"]
 
     },
     {
