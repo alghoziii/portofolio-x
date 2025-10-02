@@ -329,13 +329,14 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <h3 className="text-3xl py-1 text-teal-600 dark:text-teal-400 text-center mb-12">Portfolio</h3>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {portfolioData.map((item, index) => (
                 <div
                   key={index}
-                  className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                  className="flex flex-col bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full"
                   data-aos="fade-up"
                 >
+                  {/* Gambar */}
                   <div className="relative h-60 w-full overflow-hidden">
                     <img
                       src={item.image}
@@ -343,12 +344,19 @@ export default function Home() {
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                     />
                   </div>
-                  <div className="p-6">
-                    <h4 className="text-xl font-bold text-gray-800 dark:text-white mb-3">{item.title}</h4>
-                    <p className="text-gray-600 dark:text-gray-300 mb-6 text-justify">{item.desc}</p>
-
-                    {/* Unique Tech Stack for Each Project */}
-                    <div className="flex flex-wrap gap-4 mb-6">
+            
+                  {/* Konten */}
+                  <div className="flex flex-col flex-grow p-6">
+                    <h4 className="text-xl font-bold text-gray-800 dark:text-white mb-3">
+                      {item.title}
+                    </h4>
+            
+                    <p className="text-gray-600 dark:text-gray-300 mb-6 text-justify flex-grow">
+                      {item.desc}
+                    </p>
+            
+                    {/* Tech stack */}
+                    <div className="flex flex-wrap gap-2 mb-6">
                       {item.techStack?.map((tech, i) => (
                         <span
                           key={i}
@@ -358,12 +366,13 @@ export default function Home() {
                         </span>
                       ))}
                     </div>
-
+            
+                    {/* Tombol selalu di bawah */}
                     <a
                       href={item.view || item.demo || '#'}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block w-full bg-teal-500 hover:bg-teal-600 text-white text-center py-2 px-4 rounded-lg transition-colors duration-300"
+                      className="mt-auto block w-full bg-teal-500 hover:bg-teal-600 text-white text-center py-2 px-4 rounded-lg transition-colors duration-300"
                     >
                       Lihat Detail
                     </a>
