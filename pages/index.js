@@ -55,15 +55,7 @@ export default function Home() {
       demo: "https://dashboard-kasir.vercel.app/",
       techStack: ["PHP Native","ReactJs", "MYSQL", "Tailwind"]
 
-    },
-    {
-      image: "/booking.png",
-      title: "Mini Soccer Booking",
-      desc: "Website pemesanan lapangan mini soccer online yang dibangun dengan arsitektur microservices menggunakan Gin & Golang, dilengkapi fitur autentikasi pengguna, cek ketersediaan jadwal lapangan secara real-time,order lapangan dan pembayaran online(Midtrans)",
-      view: "https://github.com/alghoziii/mini-soccer-booking",
-      techStack: ["Golang", " PostgreSql", "Docker", "GCP", "NEXTJS"]
-
-    },
+    }
   ];
 
   const experiences = [
